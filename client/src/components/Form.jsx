@@ -1,11 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import List from './List';
 
 export default function Form() {
 
     const {register, handleSubmit} = useForm();
-    console.log('register', register);
-    console.log('handleSubmit', handleSubmit);
 
     const onSubmit = async (data) => {
         console.log('data', data);
@@ -34,6 +33,8 @@ export default function Form() {
                 </div>
             </div>    
         </form>
+
+        <List />
     </div>
   )
 }
