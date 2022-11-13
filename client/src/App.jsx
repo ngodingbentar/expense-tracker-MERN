@@ -1,4 +1,5 @@
 import './App.css';
+import Form from './components/Form';
 import Graph from './components/Graph';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <h1 className="text-4xl py-8 mb-10 bg-slate-800 text-white rounded">Expense Tracker</h1>
       <div className="grid md:grid-cols-2 gap-4">
         <Graph />
+        <Form />
       </div>
     </div>
   </div>
