@@ -1,7 +1,7 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
-// import Labels from './Labels';
+import Labels from './Labels';
 // import { chart_Data, getTotal } from '../helper/helper'
 // import {default as api} from '../store/apiSlice';
 
@@ -37,6 +37,10 @@ export default function Graph() {
                     <span className='block text-3xl text-emerald-400'>$3</span>
                 </h3>
             </div>
+
+						<div className="flex flex-col py-10 gap-4">
+                <Labels></Labels>
+            </div> 
         </div>
     </div>
   )
