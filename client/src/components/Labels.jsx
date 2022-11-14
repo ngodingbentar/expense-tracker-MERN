@@ -1,10 +1,13 @@
 import React from 'react'
+import { default as api } from '../store/apiSlice'
 
 export default function Labels() {
   const data = [
     {type: 'Food', color: '#f94144', percent: 50},
     {type: 'Transport', color: '#f3722c', percent: 20},
   ]
+
+  console.log('get cat', api.useGetCategoriesQuery())
 
   return (
     <>
