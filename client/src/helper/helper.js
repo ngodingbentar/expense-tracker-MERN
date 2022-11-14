@@ -12,20 +12,17 @@ export function getSum(transaction, type){
       }
     })
     .value()
-  console.log('sum 1', sum)
   return sum;
 }
 
 export function getLabels(transaction){
   let amountSum = getSum(transaction, 'type');
   let Total = _.sum(getSum(transaction));
-  console.log('total', Total)
 
   let  percent = _(amountSum)
     .map(objs => _.assign(objs, { percent : (100 * objs.total)  / Total}))
     .value()
 
-  console.log('percent', percent)
   return percent;
 }
 
@@ -51,7 +48,6 @@ export function chart_Data(transaction, custom){
   }
 
   return custom ?? config;
-
 }
 
 export function getTotal(transaction){
